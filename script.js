@@ -272,11 +272,11 @@
 // }
 // fetchdata();
 
-const p1 = new Promise((resolve, reject) => {
-  setTimeout(() => {
-    resolve("Problem Resolved");
-  }, 3000);
-});
+// const p1 = new Promise((resolve, reject) => {
+//   setTimeout(() => {
+//     resolve("Problem Resolved");
+//   }, 3000);
+// });
 
 // p1
 // .then((res)=>{console.log(res)})
@@ -291,29 +291,29 @@ const p1 = new Promise((resolve, reject) => {
 //     },1000);
 // })
 
-function promise(message,time){
-    return new Promise((resolve, reject) => {
-        setTimeout(() => {
-            console.log(message);
-            resolve(message);
-        },time);
-    });
-}
+// function promise(message,time){
+//     return new Promise((resolve, reject) => {
+//         setTimeout(() => {
+//             console.log(message);
+//             resolve(message);
+//         },time);
+//     });
+// }
 
 
 
-p1
-.then((res)=>{
-    console.log(res)
-})
-.then(()=>{
-    return (promise("P1",4000))
-})
-.then(()=>{
-    return (promise("P2",2000));
-})
-.catch((err)=>{
-    console.log("Error: "+ err);
-})
+// p1
+// .then((res)=>{
+//     console.log(res)
+// })
+// .then(()=>{
+//     return (promise("P1",4000))
+// })
+// .then(()=>{
+//     return (promise("P2",2000));
+// })
+// .catch((err)=>{
+//     console.log("Error: "+ err);
+// })
 
 
