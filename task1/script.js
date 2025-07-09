@@ -23,9 +23,9 @@ data().then((res)=>{
     showdata.innerHTML = res.map((p) => {
             return `
                 <div>
-                    <h3>${p.Title}</h3>
+                    <h5>${p.Title}</h5>
                     <p>${p.Description}</p>
-                    <strong>Price: $${p.Price}</strong>
+                    <p>Price: $${p.Price}</p>
                 </div>`
             ;
         })
