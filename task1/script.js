@@ -21,12 +21,10 @@ const data = async function fetchdata(){
 const showdata = document.getElementById("first");
 data().then((res)=>{
     showdata.innerHTML = res.map((p) => {
-            return `
-                <div>
+            return `<div>
                     <h5>${p.Title}</h5>
                     <p>${p.Description}</p>
-                    <p>Price: $${p.Price}</p>
-                </div>`
-            ;
+                    <p>Price: $ ${p.Price} </p>
+                </div>`;
         })
 })

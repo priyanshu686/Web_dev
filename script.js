@@ -317,3 +317,47 @@
 // })
 
 
+// Event Capurting :- Top to Bottom
+
+
+// Bubbling :- Bottom to Top
+
+// e.stopPropagation() -> Can stop the event from bubbling up or capurting down.
+
+
+// const grandparent = document.getElementById("grandparent");
+// const parent = document.getElementById("parent");
+// const child = document.getElementById("child");
+
+// grandparent.addEventListener("click",(e)=>{
+//     console.log("This is Red Block");
+// })
+
+// parent.addEventListener("click",(e)=>{
+//     console.log("This is Green Block");
+// })
+
+// child.addEventListener("click",(e)=>{
+//     console.log("This is Blue Block")
+// })
+
+
+// Event Deligation
+
+
+
+
+function debounce() {
+    let currenttime;
+    const inputbox = document.getElementById("textbox");
+
+    inputbox.addEventListener("input", (e) => {
+        clearTimeout(currenttime); 
+        currenttime = setTimeout(() => {
+            console.log(e.target.value); 
+        }, 3000);
+    });
+}
+debounce();
+
+// Debouncing -> 
