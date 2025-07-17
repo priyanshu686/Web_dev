@@ -365,10 +365,21 @@
 
 // Event Loop 
 
-var a = 10;
-console.log(a);
-Promise.resolve("Resolved").then(()=>{console.log("P1")});
-Promise.resolve("Resolved").then(console.log("P2"));
-process.nextTick(()=>{
-    console.log("NT1");
+// var a = 10;
+// console.log(a);
+// Promise.resolve("Resolved").then(()=>{console.log("P1")});
+// Promise.resolve("Resolved").then(console.log("P2"));
+// process.nextTick(()=>{
+//     console.log("NT1");
+// })
+
+const EventEmitter = require('events');
+const eventEmitter = new EventEmitter();
+eventEmitter.on('event',()=>{
+    console.log("Event is started");
 })
+eventEmitter.once('event1',()=>{
+    console.log("Event is started of Once");
+})
+eventEmitter.emit('event1');
+eventEmitter.emit('event1');
