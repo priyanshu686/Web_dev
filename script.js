@@ -347,17 +347,28 @@
 
 
 
-function debounce() {
-    let currenttime;
-    const inputbox = document.getElementById("textbox");
+// function debounce() {
+//     let currenttime;
+//     const inputbox = document.getElementById("textbox");
 
-    inputbox.addEventListener("input", (e) => {
-        clearTimeout(currenttime); 
-        currenttime = setTimeout(() => {
-            console.log(e.target.value); 
-        }, 3000);
-    });
-}
-debounce();
+//     inputbox.addEventListener("input", (e) => {
+//         clearTimeout(currenttime); 
+//         currenttime = setTimeout(() => {
+//             console.log(e.target.value); 
+//         }, 3000);
+//     });
+// }
+// debounce();
 
 // Debouncing -> 
+
+
+// Event Loop 
+
+var a = 10;
+console.log(a);
+Promise.resolve("Resolved").then(()=>{console.log("P1")});
+Promise.resolve("Resolved").then(console.log("P2"));
+process.nextTick(()=>{
+    console.log("NT1");
+})
