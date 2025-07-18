@@ -25,10 +25,10 @@ lookupDomain('instagram.com');
 
 
 // Resolve DNS IPv4 Addresses  
-dns.resolve4('www.codeforces.com', (err, addresses) => {
+dns.resolve('www.codeforces.com','AAAA', (err, addresses) => {
   if (err) throw err;
 
-  console.log('IPv4 addresses:');
+  console.log('IPv6 addresses:');
   addresses.forEach(address => {
     console.log(` ${address}`);
   });
