@@ -1,0 +1,25 @@
+{
+  "name": "helper_function_for_calculation",
+  "version": "1.1.0",
+  "description": "Just common Calculations",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/priyanshu686/WEB_DEV/npm_package"
+  },
+  "keywords": [
+    "calculater",
+    "Divide",
+    "multiply",
+    "add",
+    "subtract"
+  ],
+  "author": "Priyanshu Bindal",
+  "license": "ISC",
+  "dependencies": {
+    "@changesets/cli": "^2.29.5"
+  }
+}

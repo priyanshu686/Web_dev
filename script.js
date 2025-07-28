@@ -373,13 +373,22 @@
 //     console.log("NT1");
 // })
 
-const EventEmitter = require('events');
-const eventEmitter = new EventEmitter();
-eventEmitter.on('event',()=>{
-    console.log("Event is started");
-})
-eventEmitter.once('event1',()=>{
-    console.log("Event is started of Once");
-})
-eventEmitter.emit('event1');
-eventEmitter.emit('event1');
+// const EventEmitter = require('events');
+// const eventEmitter = new EventEmitter();
+// eventEmitter.on('event',()=>{
+//     console.log("Event is started");
+// })
+// eventEmitter.once('event1',()=>{
+//     console.log("Event is started of Once");
+// })
+// eventEmitter.emit('event1');
+// eventEmitter.emit('event1');
+
+const {add,subtract,multiply} = require('helper_function_for_calculation');
+
+console.log(add(5,3));
+console.log(subtract(10,4));
+console.log(multiply(6,7));
+
+// MongoDB
+// -> CAP -> Consistency, Availability, Partition Tolerance
