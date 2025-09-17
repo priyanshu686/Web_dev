@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "express": "^5.1.0",
     "helper_function_for_calculation": "^1.1.0"
   }
 }
